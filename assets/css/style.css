@@ -387,7 +387,7 @@ a:hover {
   animation: animate-preloader 1s linear infinite;
 } */
 
-/* @keyframes animate-preloader {
+@keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
   }
@@ -395,7 +395,7 @@ a:hover {
   100% {
     transform: rotate(360deg);
   }
-} */
+}
 
 /*------/ Button /------*/
 .button {
