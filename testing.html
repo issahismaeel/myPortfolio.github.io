@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Viewer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .certificate-thumbnail {
+            transition: transform 0.2s;
+        }
+
+        .certificate-thumbnail:hover {
+            transform: scale(1.05);
+        }
+
+        .zoom-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .image-container:hover .zoom-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row certificate-container justify-content-center">
+            <div class="col-md-4 text-center certificate">
+                <div class="image-container position-relative">
+                    <img src="assets/certs/DEGREE  CERTIFICATE.jpg" class="img-fluid certificate-thumbnail"
+                        alt="Certificate 1" data-toggle="modal" data-target="#certificate-modal"
+                        data-img-src="assets/certs/DEGREE  CERTIFICATE.jpg">
+                    <div class="zoom-overlay" data-toggle="modal" data-target="#certificate-modal"
+                        data-img-src="assets/certs/DEGREE  CERTIFICATE.jpg">+</div>
+                </div>
+                <div class="caption mt-2"><b>Bachelor of Science in Information Technology (KNUST)</b></div>
+            </div>
+
+        </div>
+        <br>
+        <!-- professional certificates -->
+        <div class="row certificate-container justify-content-center">
+            <div class="col-md-4 text-center certificate">
+                <div class="image-container position-relative">
+                    <img src="assets/certs/Web hackers toolbox cert_page-0001.jpg"
+                        class="img-fluid certificate-thumbnail" alt="Certificate 2" data-toggle="modal"
+                        data-target="#certificate-modal"
+                        data-img-src="assets/certs/Web hackers toolbox cert_page-0001.jpg">
+                    <div class="zoom-overlay" data-toggle="modal" data-target="#certificate-modal"
+                        data-img-src="assets/certs/Web hackers toolbox cert_page-0001.jpg">+</div>
+                </div>
+                <div class="caption mt-2"><b> Certificate in Web Hackers's Toolbox (EC-Council)</b></div>
+            </div>
+            <div class="col-md-4 text-center certificate">
+                <div class="image-container position-relative">
+                    <img src="assets/certs/ethical hacking essentials cert_page-0001.jpg"
+                        class="img-fluid certificate-thumbnail" alt="Certificate 3" data-toggle="modal"
+                        data-target="#certificate-modal"
+                        data-img-src="assets/certs/ethical hacking essentials cert_page-0001.jpg">
+                    <div class="zoom-overlay" data-toggle="modal" data-target="#certificate-modal"
+                        data-img-src="assets/certs/ethical hacking essentials cert_page-0001.jpg">+</div>
+                </div>
+                <div class="caption mt-2"><b>Certificate in Ethical Hacking Essentials(EC-Council)</b></div>
+            </div>
+            <div class="col-md-4 text-center certificate">
+                <div class="image-container position-relative">
+                    <img src="assets/certs/SQL injections attack cert_page-0001.jpg"
+                        class="img-fluid certificate-thumbnail" alt="Certificate 3" data-toggle="modal"
+                        data-target="#certificate-modal"
+                        data-img-src="assets/certs/SQL injections attack cert_page-0001.jpg">
+                    <div class="zoom-overlay" data-toggle="modal" data-target="#certificate-modal"
+                        data-img-src="assets/certs/SQL injections attack cert_page-0001.jpg">+</div>
+                </div>
+                <div class="caption mt-2"><b>Certificate in SQL Injection Attacks (EC-Council)</b></div>
+            </div>
+            <!-- Add more certificates as needed-->
+        </div>
+        <hr style="background-color: black;">
+        <!-- third section for sectificates -->
+        <br>
+        <div class="row certificate-container justify-content-center">
+            <div class="col-md-4 text-center certificate">
+                <div class="image-container position-relative">
+                    <img src="assets/certs/Amalitech certificate in software development_page-0001.jpg"
+                        class="img-fluid certificate-thumbnail" alt="Certificate 2" data-toggle="modal"
+                        data-target="#certificate-modal"
+                        data-img-src="assets/certs/Amalitech certificate in software development_page-0001.jpg">
+                    <div class="zoom-overlay" data-toggle="modal" data-target="#certificate-modal"
+                        data-img-src="assets/certs/Amalitech certificate in software development_page-0001.jpg">+</div>
+                </div>
+                <div class="caption mt-2"><b> Certificate of participation in software development graduate trainee program (From AmaliTech)</b></div>
+            </div>
+            <div class="col-md-4 text-center certificate">
+                <div class="image-container position-relative">
+                    <img src="assets/certs/Codecademy cert_page-0001.jpg"
+                        class="img-fluid certificate-thumbnail" alt="Certificate 3" data-toggle="modal"
+                        data-target="#certificate-modal"
+                        data-img-src="assets/certs/Codecademy cert_page-0001.jpg">
+                    <div class="zoom-overlay" data-toggle="modal" data-target="#certificate-modal"
+                        data-img-src="assets/certs/Codecademy cert_page-0001.jpg">+</div>
+                </div>
+                <div class="caption mt-2"><b>Certificate of completion in comprehensive JavaScript (From CodeCademy)</b></div>
+            </div>
+            <div class="col-md-4 text-center certificate">
+                <div class="image-container position-relative">
+                    <img src="assets/certs/freeCode Camp  Cert_page-0001.jpg"
+                        class="img-fluid certificate-thumbnail" alt="Certificate 3" data-toggle="modal"
+                        data-target="#certificate-modal"
+                        data-img-src="assets/certs/freeCode Camp  Cert_page-0001.jpg">
+                    <div class="zoom-overlay" data-toggle="modal" data-target="#certificate-modal"
+                        data-img-src="assets/certs/freeCode Camp  Cert_page-0001.jpg">+</div>
+                </div>
+                <div class="caption mt-2"><b>Certificate in Responsive Web Design (From FreeCodeCamp)</b></div>
+            </div>
+            <!-- Add more certificates as needed-->
+        </div>
+    </div>
+
+
+
+    <!-- Modal for enlarged certificate -->
+    <div id="certificate-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Certificate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" id="modal-image" src="" alt="Enlarged Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Custom JavaScript to handle modal image source
+        $('#certificate-modal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var imgSrc = button.data('img-src');
+            var modal = $(this);
+            modal.find('#modal-image').attr('src', imgSrc);
+        });
+    </script>
+</body>
+
+</html>
