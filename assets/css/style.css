@@ -363,7 +363,7 @@ a:hover {
 }
 
 /*------/ Prelaoder /------*/
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -372,9 +372,9 @@ a:hover {
   z-index: 9999;
   overflow: hidden;
   background: #fff;
-}
+} */
 
-#preloader:before {
+/* #preloader:before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -385,9 +385,9 @@ a:hover {
   width: 60px;
   height: 60px;
   animation: animate-preloader 1s linear infinite;
-}
+} */
 
-@keyframes animate-preloader {
+/* @keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
   }
@@ -395,7 +395,7 @@ a:hover {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*------/ Button /------*/
 .button {
